@@ -1,11 +1,18 @@
+import Router from "./Router";
+import styled from "styled-components";
+import { GlobalStyle } from "./globalStyle";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          가상극장에서의 나의 춤
-      </header>
-    </div>
+    <Wrapper>
+      <GlobalStyle />
+      <Router />
+    </Wrapper>
   );
 }
 
 export default App;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
